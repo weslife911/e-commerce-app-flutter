@@ -31,7 +31,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       label: Text("Reset Password"),
-                      hintText: "Reset Password")),
+                      hintText: "Enter Email Address")),
             ),
             Padding(
               padding: EdgeInsets.all(12),
