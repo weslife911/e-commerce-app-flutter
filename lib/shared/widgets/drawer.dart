@@ -2,8 +2,8 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:shopping_app/screens/auth_pages.dart';
-import 'package:shopping_app/widgets/drawer_tile.dart';
+import 'package:shopping_app/authentication/screens/auth_pages.dart';
+import 'package:shopping_app/shared/widgets/drawer_tile.dart';
 
 class MyDrawer extends StatelessWidget {
   final String email;

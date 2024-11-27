@@ -2,7 +2,7 @@
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:shopping_app/widgets/widgets.dart';
+import 'package:shopping_app/shared/widgets/widgets.dart';
 
 class DetailsPage extends StatefulWidget {
   final String title, description, imagePath;
@@ -58,7 +58,7 @@ class _DetailsPageState extends State<DetailsPage> {
         child: Column(
           children: [
             CachedNetworkImage(
-                imageUrl: widget.imagePath,
+              imageUrl: widget.imagePath,
             ),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20),
@@ -70,8 +70,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     children: [
                       Text(
                         widget.title.substring(0, 10),
-                        style:
-                            TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                       ),
                       SizedBox(
                         width: 20,
@@ -87,8 +86,7 @@ class _DetailsPageState extends State<DetailsPage> {
                           ),
                           Text(
                             "${widget.rating}",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 15),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                           )
                         ],
                       ),
@@ -96,10 +94,7 @@ class _DetailsPageState extends State<DetailsPage> {
                   ),
                   Text(
                     "\$${widget.price}",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red,
-                        fontSize: 30),
+                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red, fontSize: 30),
                   ),
                 ],
               ),

@@ -1,7 +1,7 @@
 import "package:firebase_core/firebase_core.dart";
 import "package:flutter/material.dart";
 import "package:shopping_app/firebase_options.dart";
-import "package:shopping_app/screens/auth_pages.dart";
+import "package:shopping_app/authentication/screens/auth_pages.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: AuthPage());
+    return const MaterialApp(debugShowCheckedModeBanner: false, home: AuthPage());
   }
 }
