@@ -3,10 +3,10 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:shopping_app/models/product.dart';
-import 'package:shopping_app/util/grid_box.dart';
-import 'package:shopping_app/widgets/drawer.dart';
-import '../const/const.dart';
+import 'package:shopping_app/products/data/models/product.dart';
+import 'package:shopping_app/shared/util/grid_box.dart';
+import 'package:shopping_app/shared/widgets/drawer.dart';
+import '../../shared/const/const.dart';
 import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
